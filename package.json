@@ -1,0 +1,43 @@
+{
+  "name": "loadable-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloitsjoe/loadable-experiments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloitsjoe/loadable-experiments/issues"
+  },
+  "homepage": "https://github.com/helloitsjoe/loadable-experiments#readme",
+  "dependencies": {
+    "@loadable/component": "^5.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@testing-library/react": "^10.4.8",
+    "babel-eslint": "^10.1.0",
+    "babel-react-simple": "^1.0.2",
+    "eslint": "^7.6.0",
+    "eslint-config-helloitsjoe": "^1.2.4",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "jest": "^26.2.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-simple": "^1.6.1"
+  }
+}
