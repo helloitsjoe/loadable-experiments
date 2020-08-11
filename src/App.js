@@ -1,9 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import loadable from '@loadable/component';
 import Home from './Home';
-import About from './About';
+// import About from './About';
 import Links from './Links';
+
+const About = loadable(() => import('./About'));
 
 const NavBar = styled.div`
   display: flex;
@@ -38,7 +41,7 @@ export default function App() {
           <Home />
         </Route>
         <Route path="/about" exact>
-          <About />
+          <About fallback="foo" />
         </Route>
         <Route path="/links" exact>
           <Links />
