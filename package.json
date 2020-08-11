@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,9 @@
   "dependencies": {
     "@loadable/component": "^5.13.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -28,6 +33,7 @@
     "@babel/preset-react": "^7.10.4",
     "@testing-library/react": "^10.4.8",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
     "babel-react-simple": "^1.0.2",
     "eslint": "^7.6.0",
     "eslint-config-helloitsjoe": "^1.2.4",
@@ -35,9 +41,11 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "html-webpack-plugin": "^4.3.0",
     "jest": "^26.2.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
     "webpack-simple": "^1.6.1"
   }
 }
